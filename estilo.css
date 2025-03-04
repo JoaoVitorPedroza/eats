@@ -26,7 +26,7 @@ body {
     width: 250px;
     height: 60px;
     background-color: yellow;
-    margin-top: 40%;
+    margin-top: 10%;
 }
 
 .pratos {
@@ -76,18 +76,96 @@ body {
     box-sizing: border-box;
     flex-shrink: 0;
 }
-
+.imagem1{
+ width: 144px;
+ height: 87px;
+ top: 183px;
+ left: 33px;
+ border-radius: 4px;
+}
+.imagem2{
+    width: 144px;
+    height: 87px;
+    top: 183px;
+    left: 33px;
+    border-radius: 4px;
+}
+.imagem3{
+    width: 144px;
+    height: 87px;
+    top: 183px;
+    left: 33px;
+    border-radius: 4px;
+}
+.imagem4{
+    width: 144px;
+    height: 87px;
+    top: 183px;
+    left: 33px;
+    border-radius: 4px; 
+}
+.imagem5{
+    width: 144px;
+    height: 87px;
+    top: 183px;
+    left: 33px;
+    border-radius: 4px;
+}
+.imagem6{
+    width: 144px;
+    height: 87px;
+    top: 183px;
+    left: 33px;
+    border-radius: 4px;
+}
+.imagem7{
+    width: 144px;
+    height: 87px;
+    top: 183px;
+    left: 33px;
+    border-radius: 4px;
+}
+.imagem8{
+    width: 144px;
+    height: 87px;
+    top: 183px;
+    left: 33px;
+    border-radius: 4px;
+}
+.imagem9{
+    width: 144px;
+    height: 87px;
+    top: 183px;
+    left: 33px;
+    border-radius: 4
+}
 .final {
     position: fixed; /* Fixa a barra na tela */
     bottom: 0; /* Posiciona a barra na parte inferior da tela */
     left: 0; /* Posiciona a barra na extremidade esquerda da tela */
     width: 100%; /* Garante que a barra ocupe toda a largura da tela */
-    height: 50px; /* Defina a altura desejada para a barra */
-    background-color: #333; /* Defina a cor de fundo da barra */
+    height: 60px; /* Defina a altura desejada para a barra */
+    background-color: #FFFFFF; /* Defina a cor de fundo da barra */
     color: #fff; /* Defina a cor do texto da barra */
     text-align: center; /* Centraliza o texto na barra */
     line-height: 50px; /* Centraliza verticalmente o texto na barra */
     z-index: 1000; /* Garante que a barra fique na frente de outros elementos */
     display: flex;
     justify-content: center;
+
+}
+button{
+    width: 200px;
+    height: 50px;
+    border: #CBCBCB;
+    border-radius:50px ;
+    background-color: #CBCBCB ;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 200px;
+    font-size: 15px;
+    line-height: 23.44px;
+    letter-spacing: 1.8%;
+    text-align: center;
+
 }
