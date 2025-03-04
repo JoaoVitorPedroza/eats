@@ -29,6 +29,30 @@ function adicionarBordaVerde(event) {
     console.log('Prato selecionado:', pratoSelecionado ? pratoSelecionado.innerText : 'Nenhum');
     console.log('Bebida selecionada:', bebidaSelecionada ? bebidaSelecionada.innerText : 'Nenhum');
     console.log('Sobremesa selecionada:', sobremesaSelecionada ? sobremesaSelecionada.innerText : 'Nenhum');
+
+    // Verifica se todos os itens foram selecionados
+    verificarSelecao();
+}
+
+// Função para verificar se todos os itens foram selecionados
+function verificarSelecao() {
+    if (pratoSelecionado && bebidaSelecionada && sobremesaSelecionada) {
+        var botao = document.getElementById('botao');
+        botao.style.backgroundColor = '#32B72F';
+        botao.innerText = 'Fechar Pedido';
+        botao.onclick = mostrarCarrinho;
+    }
+}
+
+// Função para exibir o carrinho
+function mostrarCarrinho() {
+    var carrinho = document.getElementById('carrinho');
+    carrinho.style.display = 'block';
+
+    // Atualiza o carrinho com os itens selecionados
+    document.getElementById('pf').innerText = 'Seu prato: ' + pratoSelecionado.querySelector('h4').innerText;
+    document.getElementById('suco').innerText = 'Sua bebida: ' + bebidaSelecionada.querySelector('h4').innerText;
+    document.getElementById('lanchinho').innerText = 'Sua sobremesa: ' + sobremesaSelecionada.querySelector('h4').innerText;
 }
 
 // Adiciona o evento de clique a cada elemento de pratos
@@ -44,4 +68,8 @@ bebidas.forEach(function(bebida) {
 // Adiciona o evento de clique a cada elemento de sobremesas
 sobremesas.forEach(function(sobremesa) {
     sobremesa.addEventListener('click', adicionarBordaVerde);
+});
+let voltar = document.getElementById('back');
+voltar.addEventListener('click', function () {
+    document.getElementById('carrinho').style.display = 'none';
 });

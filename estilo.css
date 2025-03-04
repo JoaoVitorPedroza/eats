@@ -185,3 +185,40 @@ button{
     text-align: center;
 
 }
+.carrinho{
+    position: fixed;
+    width: 355px;
+    height: 353px;
+    background-color: #50D074;
+    margin-top: 40%;
+    margin-left: 3%;
+    z-index: 1000;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    border-radius: 9px;
+    color: #FFFFFF;
+    display: none;
+}
+.titulo4{
+    margin-left: 80px;
+}
+.pf{
+    margin-left: 80px;
+}
+.suco{
+    margin-left: 80px;
+}
+.lanchinho{
+    margin-left: 80px;
+}
+.zap{
+    margin-left: 80px;
+    background-color: #FFFFFF;
+    color: #50D074;
+}
+.voltar{
+    margin-left: 80px;
+    margin-top: 5px;
+    background-color: #50D074;
+    color:#FFFFFF ;
+}
