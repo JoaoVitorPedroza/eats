@@ -18,20 +18,20 @@
 <div class="titulo1">
 <h2>Primeiro seu, prato</h2>
 </div>
-<div class="pratos">
-    <div class="prato1">
+<div class="pratos" id="pratos">
+    <div class="prato1" id="op1">
         <img class="imagem1" src="imagens a serem trocadas/pf_frango.jpg">
         <h4>PF de Frango</h4>
         <p>pf que acompanha, frango, arroz e feijão</p>
         <p>R$ 20,00</p>
     </div>
-    <div class="prato2">
+    <div class="prato2" id="op2">
         <img class="imagem2" src="imagens a serem trocadas/pf_carne.jpg">
         <h4>PF de Carne</h4>
         <p>pf que acompanha, carne, arroz e feijão</p>
         <p>R$ 28,00</p>
     </div>
-    <div class="prato3">
+    <div class="prato3" id="op3">
         <img class="imagem3" src="imagens a serem trocadas/pf_calabresa.png">
         <h4>PF de calabresa</h4>
         <p>pf que acompanha, calabresa, arroz e feijão</p>
@@ -41,43 +41,43 @@
 <div class="titulo2">
     <h2>Agora sua Bebida:</h2>
 </div>
-<div class="bebidas">
-    <div class="bebida1">
+<div class="bebidas" id="bebidas">
+    <div class="bebida1" id="op4">
         <img class="imagem4" src="imagens a serem trocadas/suco.png">
         <h4>Suco de Laranja</h4>
         <p>Suco de laranja natural</p>
         <p>R$ 8,00</p>
     </div>
-    <div class="bebida2">
+    <div class="bebida2" id="op5">
         <img class="imagem5" src="imagens a serem trocadas/coca.png">
         <h4>Coca-Cola</h4>
         <p>Coca-Cola de 2L</p>
         <p>R$ 10,00</p>
     </div>
-    <div class="bebida3">
+    <div class="bebida3" id="op6">
         <img class="imagem6" src="imagens a serem trocadas/fanta.png">
         <h4>Fanta Laranja</h4>
         <p>Fanta de 2L</p>
         <p>R$ 7,00</p>
     </div>
 </div>
-<div class="titulo3">
+<div class="titulo3" >
     <h2>Agora sua Sobremesa:</h2>
 </div>
-<div class="sobremesas">
-    <div class="sobremesa1">
+<div class="sobremesas" id="sobremesas">
+    <div class="sobremesa1" id="op7">
         <img class="imagem7" src="imagens a serem trocadas/brownie.jpg">
         <h4>Brownie</h4>
         <p>Brownie de chocolate</p>
         <p>R$ 4,50</p>
     </div>
-    <div class="sobremesa2">
+    <div class="sobremesa2" id="op8">
         <img class="imagem8" src="imagens a serem trocadas/mouse.jpg">
         <h4>mousse</h4>
         <p>Mousse de chocolate</p>
         <p>R$ 5,00</p>
     </div>
-    <div class="sobremesa3">
+    <div class="sobremesa3" id="op9">
         <img class="imagem9" src="imagens a serem trocadas/pudim.jpg">
         <h4>Pudim</h4>
         <p>Pudim de leite condensado</p>
@@ -88,6 +88,7 @@
 
 </div>
 <div class="final">
-<button>Selecione 3 itens para fechar o pedido</button>
+<button id="botao" onclick="carrinho()">Selecione 3 itens para fechar o pedido</button>
 </div>
+<script src="display.js"></script>
 </body>
