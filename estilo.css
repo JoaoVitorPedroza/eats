@@ -188,7 +188,7 @@ button{
 .carrinho{
     position: fixed;
     width: 355px;
-    height: 353px;
+    height: 373px;
     background-color: #50D074;
     margin-top: 40%;
     margin-left: 3%;
@@ -211,6 +211,9 @@ button{
 .lanchinho{
     margin-left: 80px;
 }
+.tudo{
+    margin-left: 80px;
+}
 .zap{
     margin-left: 80px;
     background-color: #FFFFFF;
@@ -222,3 +225,4 @@ button{
     background-color: #50D074;
     color:#FFFFFF ;
 }
+
