@@ -71,6 +71,11 @@ function mostrarCarrinho() {
                      parseFloat(bebidaPreco.replace('R$', '').replace(',', '.')) +
                      parseFloat(sobremesaPreco.replace('R$', '').replace(',', '.'));
     document.getElementById('preco_total').innerText = 'Total: R$ ' + precoTotal.toFixed(2).replace('.', ',');
+
+    // Atualiza o link do WhatsApp
+    var mensagem = `Olá, gostaria de fazer um pedido: ${pratoNome}, ${bebidaNome}, ${sobremesaNome}. Total: R$ ${precoTotal.toFixed(2).replace('.', ',')}`;
+    var linkWhatsApp = `https://wa.me//5571999531468?text=${encodeURIComponent(mensagem)}`;
+    document.getElementById('zap-link').href = linkWhatsApp;
 }
 
 // Adiciona o evento de clique a cada elemento de pratos
