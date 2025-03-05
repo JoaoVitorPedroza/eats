@@ -1,3 +1,7 @@
+body.fundo-opaco {
+    background-color: #FFFFFFE5; /* Torna o fundo opaco */
+}
+
 body {
     width: 100%;
     height: 100vh; /* Ocupa a altura total da janela */
@@ -6,32 +10,35 @@ body {
     flex-direction: column;
     background-color: #eeeeee;
 }
-h2{
+
+h2 {
     margin-left: 8px;
     margin-top: 20px;
     top: 0;
     font-family: "Righteous", sans-serif;
 }
-h1{
+
+h1 {
     margin-left: 8px;
     font-family: "Righteous", sans-serif;
 }
-h3{
+
+h3 {
     margin-left: 8px;
     margin-top: -15px;
     font-family: "Righteous", sans-serif;
 }
+
 .conteudo {
     flex: 1; /* Ocupa o espaço restante entre o topo e o final */
     margin-top: 100px; /* Espaço para o topo fixo */
     overflow-y: auto; /* Permite rolagem vertical se necessário */
 }
 
-
 .topo {
     width: 100%;
     height: 100px;
-    position:fixed;
+    position: fixed;
     top: 0;
     background-color: #CF2B2B;
     color: #FFFFFF;
@@ -92,69 +99,79 @@ h3{
     box-sizing: border-box;
     flex-shrink: 0;
 }
-.imagem1{
- width: 144px;
- height: 87px;
- top: 183px;
- left: 33px;
- border-radius: 4px;
-}
-.imagem2{
+
+.imagem1 {
     width: 144px;
     height: 87px;
     top: 183px;
     left: 33px;
     border-radius: 4px;
 }
-.imagem3{
+
+.imagem2 {
     width: 144px;
     height: 87px;
     top: 183px;
     left: 33px;
     border-radius: 4px;
 }
-.imagem4{
-    width: 144px;
-    height: 87px;
-    top: 183px;
-    left: 33px;
-    border-radius: 4px; 
-}
-.imagem5{
+
+.imagem3 {
     width: 144px;
     height: 87px;
     top: 183px;
     left: 33px;
     border-radius: 4px;
 }
-.imagem6{
+
+.imagem4 {
     width: 144px;
     height: 87px;
     top: 183px;
     left: 33px;
     border-radius: 4px;
 }
-.imagem7{
+
+.imagem5 {
     width: 144px;
     height: 87px;
     top: 183px;
     left: 33px;
     border-radius: 4px;
 }
-.imagem8{
+
+.imagem6 {
     width: 144px;
     height: 87px;
     top: 183px;
     left: 33px;
     border-radius: 4px;
 }
-.imagem9{
+
+.imagem7 {
     width: 144px;
     height: 87px;
     top: 183px;
     left: 33px;
-    border-radius: 4
+    border-radius: 4px;
 }
+
+.imagem8 {
+    width: 144px;
+    height: 87px;
+    top: 183px;
+    left: 33px;
+    border-radius: 4px;
+}
+
+.imagem9 {
+    width: 144px;
+    height: 87px;
+    top: 183px;
+    left: 33px;
+    border-radius: 4px;
+}
+
 .final {
     position: fixed; /* Fixa a barra na tela */
     bottom: 0; /* Posiciona a barra na parte inferior da tela */
@@ -168,14 +185,14 @@ h3{
     z-index: 1000; /* Garante que a barra fique na frente de outros elementos */
     display: flex;
     justify-content: center;
-
 }
-button{
+
+button {
     width: 200px;
     height: 50px;
     border: #CBCBCB;
-    border-radius:50px ;
-    background-color: #CBCBCB ;
+    border-radius: 50px;
+    background-color: #CBCBCB;
     color: #FFFFFF;
     font-family: Roboto;
     font-weight: 200px;
@@ -183,9 +200,9 @@ button{
     line-height: 23.44px;
     letter-spacing: 1.8%;
     text-align: center;
-
 }
-.carrinho{
+
+.carrinho {
     position: fixed;
     width: 355px;
     height: 373px;
@@ -199,30 +216,36 @@ button{
     color: #FFFFFF;
     display: none;
 }
-.titulo4{
+
+.titulo4 {
     margin-left: 80px;
 }
-.pf{
+
+.pf {
     margin-left: 80px;
 }
-.suco{
+
+.suco {
     margin-left: 80px;
 }
-.lanchinho{
+
+.lanchinho {
     margin-left: 80px;
 }
-.tudo{
+
+.tudo {
     margin-left: 80px;
 }
-.zap{
+
+.zap {
     margin-left: 80px;
     background-color: #FFFFFF;
     color: #50D074;
 }
-.voltar{
+
+.voltar {
     margin-left: 80px;
     margin-top: 5px;
     background-color: #50D074;
-    color:#FFFFFF ;
+    color: #FFFFFF;
 }
-

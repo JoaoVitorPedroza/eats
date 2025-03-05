@@ -49,6 +49,9 @@ function mostrarCarrinho() {
     var carrinho = document.getElementById('carrinho');
     carrinho.style.display = 'block';
 
+    // Adiciona a classe para tornar o fundo opaco
+    document.body.classList.add('fundo-opaco');
+
     // Atualiza o carrinho com os itens selecionados
     var pratoNome = pratoSelecionado.querySelector('h4').innerText;
     var pratoPreco = pratoSelecionado.querySelector('p:last-of-type').innerText;
@@ -57,9 +60,9 @@ function mostrarCarrinho() {
     var sobremesaNome = sobremesaSelecionada.querySelector('h4').innerText;
     var sobremesaPreco = sobremesaSelecionada.querySelector('p:last-of-type').innerText;
 
-    document.getElementById('pf').innerText =  pratoNome + ' - ' + pratoPreco;
-    document.getElementById('suco').innerText =  bebidaNome + ' - ' + bebidaPreco;
-    document.getElementById('lanchinho').innerText =  sobremesaNome + ' - ' + sobremesaPreco;
+    document.getElementById('pf').innerText = pratoNome + ' - ' + pratoPreco;
+    document.getElementById('suco').innerText = bebidaNome + ' - ' + bebidaPreco;
+    document.getElementById('lanchinho').innerText = sobremesaNome + ' - ' + sobremesaPreco;
 
     // Calcula o preço total
     var precoTotal = parseFloat(pratoPreco.replace('R$', '').replace(',', '.')) +
@@ -86,4 +89,5 @@ sobremesas.forEach(function(sobremesa) {
 // Função para voltar e esconder o carrinho
 function voltar() {
     document.getElementById('carrinho').style.display = 'none';
+    document.body.classList.remove('fundo-opaco');
 }
