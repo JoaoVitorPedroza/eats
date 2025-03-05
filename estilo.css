@@ -1,5 +1,5 @@
 body.fundo-opaco {
-    background-color: #FFFFFFE5; /* Torna o fundo opaco */
+    overflow: hidden; /* Torna o fundo opaco */
 }
 
 body {
@@ -10,7 +10,16 @@ body {
     flex-direction: column;
     background-color: #eeeeee;
 }
-
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo opaco */
+    z-index: 999; /* Certifique-se de que está atrás do carrinho */
+    display: none; /* Inicialmente escondido */
+}
 h2 {
     margin-left: 8px;
     margin-top: 20px;
@@ -209,14 +218,13 @@ button {
     background-color: #50D074;
     margin-top: 40%;
     margin-left: 3%;
-    z-index: 1000;
+    z-index: 1000; /* Certifique-se de que está na frente da sobreposição */
     font-family: "Roboto", sans-serif;
     font-size: 22px;
     border-radius: 9px;
     color: #FFFFFF;
     display: none;
 }
-
 .titulo4 {
     margin-left: 80px;
 }

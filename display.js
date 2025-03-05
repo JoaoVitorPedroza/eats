@@ -47,7 +47,9 @@ function verificarSelecao() {
 // Função para exibir o carrinho
 function mostrarCarrinho() {
     var carrinho = document.getElementById('carrinho');
+    var overlay = document.getElementById('overlay');
     carrinho.style.display = 'block';
+    overlay.style.display = 'block';
 
     // Adiciona a classe para tornar o fundo opaco
     document.body.classList.add('fundo-opaco');
@@ -89,5 +91,6 @@ sobremesas.forEach(function(sobremesa) {
 // Função para voltar e esconder o carrinho
 function voltar() {
     document.getElementById('carrinho').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
     document.body.classList.remove('fundo-opaco');
 }
