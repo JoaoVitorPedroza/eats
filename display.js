@@ -1,4 +1,4 @@
-
+//projeto em grupo
 var pratos = document.querySelectorAll('.pratos > div');
 var bebidas = document.querySelectorAll('.bebidas > div');
 var sobremesas = document.querySelectorAll('.sobremesas > div');
